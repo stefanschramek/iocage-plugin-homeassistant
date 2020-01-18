@@ -13,4 +13,7 @@ pip3 install --upgrade pip
 pip3 install homeassistant
 exit
 
+chmod +x /usr/local/etc/rc.d/homeassistant
 
+sysrc homeassistant_enable="YES"
+service homeassistant start
